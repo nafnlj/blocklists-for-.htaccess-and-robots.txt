@@ -97,7 +97,6 @@ User-agent: NotebookLM
 User-agent: NovaAct
 User-agent: omgili
 User-agent: omgilibot
-User-agent: OpenAI
 User-agent: opencode
 User-agent: Operator
 User-agent: PanguBot
