@@ -1,0 +1,43 @@
+# Modifications to User Agent section of Jeff Starr's 8G Firewall (https://perishablepress.com/8g-firewall/)
+# Only useful if you are using original ai-robots-txt repo or my addenda + Jeff Starr's 8G Firewall
+# Modifications would be made to 8G
+# Some of the removals are for UAs covered by ai robots or my addenda (see square bracket notes)
+# Other removals are for UAs I don't want to block
+# See Jeff Starr's 8G Firewall documentation for information about the firewall and how to implement it
+# Removals Compared to 09-27-2025 Release
+# Line 140: ahrefs [I don't want to block]
+# Line 140: archiver [I don't want to block]
+# Line 144: awario [covered by ai robots]
+# Line 144: babbar [superseded by barkrowler, I don't see it anymore]
+# Line 144: barkrowler [covered by ai robots]
+# Line 144: bytespider [covered by ai robots]
+# Line 145: claudebot [covered by ai robots]
+# Line 145: commoncrawl [covered by ai robots]
+# Line 145: dataforseo [covered by my addendum to ai robots]
+# Line 148: imagesiftbot [covered by ai robots]
+# Line 151: rogerbot [covered in my robots.txt]
+# Line 151: scrapy [covered by ai robots]
+# Line 154: wellknownbot [I don't want to block]
+# Line 157: zoominfobot [covered by ai robots]
+
+# 8G:[USER AGENT]
+<IfModule mod_rewrite.c>
+
+	RewriteCond %{HTTP_USER_AGENT} ([a-z0-9]{2000,}) [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (&lt;|%0a|%0d|%27|%3c|%3e|%00|0x00|\\\x22|\\\") [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (curl|libwww-perl|pycurl|scan) [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (oppo\sa33|(c99|php|web)shell|site((.){0,2})copier) [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (base64_decode|bin/bash|disconnect|eval|unserializ) [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (acapbot|acoonbot|alexibot|antbot|asterias|attackbot|backdor|becomebot|binlar|bitsightbot|blackwidow|blekkobot|blex|blowfish|bullseye|bunnys|butterfly|careerbot|casper|censysinspect) [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (checkpriv|cheesebot|cherrypick|chinaclaw|choppy|clshttp|cmsworld|copernic|copyrightcheck|cosmos|crawlergo|crescent|criteo|datacha|(\b)demon(\b)|diavol|discobot|dittospyder) [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (dotbot|dotnetdotcom|dumbot|econtext|emailcollector|emailsiphon|emailwolf|eolasbot|eventures|extract|eyenetie|feedfinder|flaming|flashget|flicky|foobot|fuck) [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (g00g1e|getright|gigabot|go-ahead-got|go-http-client|gozilla|grabnet|grafula|harvest|heritrix|hrankbot|httracks?|icarus6j|intelx|jetbot|jetcar|jikespider|kmccrew|leechftp|libweb|liebaofast) [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (linkscan|linkwalker|lwp-download|majestic|masscan|mauibot|miner|mechanize|mj12bot|morfeus|moveoverbot|mozlila|netmechanic|netspider|nicerspro|nikto|ninja|nominet|nutch) [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (octopus|pagegrabber|petalbot|planetwork|postrank|proximic|purebot|queryn|queryseeker|radian6|radiation|realdownload|remoteview|scan|scooter|seekerspid) [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (semalt|seokicks|seznambot|siclab|sindice|sistrix|sitebot|siteexplorer|sitesnagger|skygrid|smartdownload|snoopy|sosospider|spankbot|spbot|sqlmap|stackrambler|stripper|sucker|surftbot) [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (sux0r|suzukacz|suzuran|takeout|teleport|telesoft|true_robots|turingos|turnit|tweetmemebot|vampire|vikspider|voideye|webleacher|webreaper|webstripper|webvac|webviewer|webwhacker) [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (winhttp|wwwoffle|woxbot|xaldon|xxxyy|yamanalab|yioopbot|yisouspider|youda|zeus|zmeu|zune|zyborg) [NC]
+
+	RewriteRule .* - [F]
+
+	# RewriteRule .* /nG_log.php?log [END,NE,E=nG_USER_AGENT:%1]
