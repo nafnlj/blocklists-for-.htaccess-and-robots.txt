@@ -1,4 +1,6 @@
-# Modifications to User Agent section of Jeff Starr's 8G Firewall (https://perishablepress.com/8g-firewall/)
+# Modifications to User Agent section of Jeff Starr's 8G FIREWALL
+# 8G FIREWALL
+# https://perishablepress.com/8g-firewall/
 # Only useful if you are using original ai-robots-txt repo or my addenda + Jeff Starr's 8G Firewall
 # Modifications would be made to 8G
 # Some of the removals are for UAs covered by ai robots or my addenda (see square bracket notes)
