@@ -161,7 +161,10 @@ Disallow: /
 
 # Additional Crawl Delays
 
+User-agent: Buck
 User-agent: DotBot
 User-agent: MJ12bot
-User-agent" siteexplorer
+User-agent: rogerbot
+User-agent: siteexplorer
+User-agent: SERankingBacklinksBot
 Crawl-delay: 180
