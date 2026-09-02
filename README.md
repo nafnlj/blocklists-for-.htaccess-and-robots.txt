@@ -6,4 +6,6 @@ The main rules are modified from the excellent ai.robots.txt project on GitHub (
 
 Finally, I included my modifications to the USER AGENT section of Jeff Starr's indispensible 8G Firewall (https://perishablepress.com/8g-firewall/). I removed user agents that are handled by my modified version of the ai.robots.txt rules and I removed a few UAs that I either address through my own robots.txt directives or that I do not want to block as a general matter.
 
+I am only including .htaccess because that is what I use for my two WordPress sites. However, both ai.robots.txt and Jeff Starr's 8G Firewall are available for various server configurations, so my edits can be adapted to whatever you may be using.
+
 At the moment, I have not published detailed explanations of my edits, but I may do so in the future. Feel free to create an issue if you have questions or suggestions. The Codeberg version of this repository (https://codeberg.org/nafnlj/blocklists-for-.htaccess-and-robots.txt) is canonical.
