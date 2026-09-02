@@ -138,7 +138,6 @@ User-agent: webzio-extended
 User-agent: wpbot
 User-agent: WRTNBot
 User-agent: YaK
-User-agent: YandexAdditional
 User-agent: YiyanBot
 User-agent: YouBot
 User-agent: ZanistaBot
