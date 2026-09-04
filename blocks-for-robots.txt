@@ -116,6 +116,7 @@ User-agent: BriskBot
 User-agent: HaloBot
 User-agent: NavCrawl
 User-agent: rssamplifier
+User-agent: RSSAmplifierBot
 User-agent: Somethinggbot
 User-agent: supjav
 User-agent: ZeroBot
@@ -138,6 +139,7 @@ Crawl-delay: 180
 ## Crawl Delay 30
 
 User-agent: Ahrefs
+User-agent: Amzn-SearchBot
 User-agent: SemrushBot
 User-agent: SemrushBot-BA
 Crawl-delay: 30
