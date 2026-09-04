@@ -1,5 +1,6 @@
 # My robots.txt block list -- structure inspired by https://github.com/ai-robots-txt/ai.robots.txt
 # It goes with and largely tracks my .htaccess, which is also part of this repository
+# Categories follow https://knownagents.com/agents
 # Robots-only additions are blocks for Google-Extended and Applebot-Extended tokens and a small group of crawl dely directives
 # Note this is not my *entire* robots.txt (see e.g., https://thenewleafjournal.com/robots.txt and https://social.emucafe.org/robots.txt)
 # This only covers bot blocking/control
