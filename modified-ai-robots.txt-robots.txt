@@ -1,163 +1,130 @@
-# Modified from https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt
-# Changes:
-# Removed: Amzn-SearchBot, Amzn-User, Applebot, Bravebot, ChatGPT-User, Claude-SearchBot, Claude-User, DuckAssistBot, facebookexternalhit
-# Removed: Gemini-Deep-Research, Google-Agent, Google-CloudVertexBot, Google-Firebase, Google-Gemini-CLI, Google-NotebookLM, GoogleAgent-Mariner, GoogleAgent-URLContext, GoogleOther
-# Removed: GoogleOther-Image, GoogleOther-Video, kagi-fetcher, MistralAI-User, MistralAI-User/1.0, Mozilla-Tabstack, OAI-SearchBot, Perplexity-User, PetalBot, YandexAdditional, YandexAdditionalBot
+# My robots.txt block list -- structure inspired by https://github.com/ai-robots-txt/ai.robots.txt
+# It goes with and largely tracks my .htaccess, which is also part of this repository
+# Robots-only additions are blocks for Google-Extended and Applebot-Extended tokens and a small group of crawl dely directives
+# Note this is not my *entire* robots.txt (see e.g., https://thenewleafjournal.com/robots.txt and https://social.emucafe.org/robots.txt)
+# This only covers bot blocking/control
 
-User-agent: AddSearchBot
-User-agent: AgentTimes
-User-agent: AI2Bot
+
+# Agents
+User-agent: Manus-User
+User-agent: TwinAgent
+Disallow: /
+
+# Assistants
 User-agent: AI2Bot-DeepResearchEval
-User-agent: Ai2Bot-Dolma
-User-agent: aiHitBot
-User-agent: AIWebIndex
-User-agent: amazon-kendra
-User-agent: amazon-QBusiness
-User-agent: Amazonbot
-User-agent: AmazonBuyForMe
-User-agent: Andibot
-User-agent: Anomura
-User-agent: anthropic-ai
+User-agent: bigsur.ai
+User-agent: GeistHaus-PageFetcher
+User-agent: PhindBot
+Disallow: /
+
+# Data Providers
 User-agent: ApifyBot
 User-agent: ApifyWebsiteContentCrawler
-User-agent: Applebot-Extended
-User-agent: Aranet-SearchBot
-User-agent: atlassian-bot
-User-agent: Awario
-User-agent: AzureAI-SearchBot
-User-agent: bedrockbot
-User-agent: bigsur.ai
 User-agent: Brightbot
-User-agent: Brightbot 1.0
-User-agent: BuddyBot
-User-agent: Bytespider
-User-agent: CCBot
-User-agent: Channel3Bot
-User-agent: ChatGLM-Spider
-User-agent: ChatGPT Agent
-User-agent: Claude-Code
-User-agent: Claude-Web
-User-agent: ClaudeBot
-User-agent: Cloudflare-AutoRAG
-User-agent: CloudVertexBot
-User-agent: Code
-User-agent: cohere-ai
-User-agent: cohere-training-data-crawler
-User-agent: Cotoyogi
 User-agent: CragCrawler
-User-agent: Crawl4AI
 User-agent: Crawlspace
-User-agent: Cursor
-User-agent: Datenbank Crawler
-User-agent: DeepSeekBot
-User-agent: Devin
 User-agent: Diffbot
-User-agent: Echobot Bot
-User-agent: EchoboxBot
 User-agent: ExaBot
-User-agent: ExaSearchBot
-User-agent: FacebookBot
-User-agent: Factset_spyderbot
 User-agent: FirecrawlAgent
-User-agent: FriendlyCrawler
-User-agent: GeistHaus-PageFetcher
-User-agent: Google-Extended
-User-agent: GPTBot
 User-agent: HenkBot
-User-agent: iAskBot
-User-agent: iaskspider
-User-agent: iaskspider/2.0
-User-agent: ICC-Crawler
-User-agent: ImagesiftBot
-User-agent: imageSpider
-User-agent: img2dataset
-User-agent: ISSCyberRiskCrawler
-User-agent: Kangaroo Bot
-User-agent: Kimi-User
-User-agent: KlaviyoAIBot
-User-agent: KunatoCrawler
-User-agent: laion-huggingface-processor
-User-agent: LAIONDownloader
-User-agent: LCC
-User-agent: Lightpanda
-User-agent: LinerBot
-User-agent: Linguee Bot
-User-agent: LinkupBot
-User-agent: Manus-User
-User-agent: meta-externalagent
-User-agent: Meta-ExternalAgent
-User-agent: meta-externalfetcher
-User-agent: Meta-ExternalFetcher
-User-agent: meta-webindexer
-User-agent: MyCentralAIScraperBot
-User-agent: NagetBot
-User-agent: netEstate Imprint Crawler
-User-agent: newsai
-User-agent: NotebookLM
-User-agent: NovaAct
-User-agent: omgili
-User-agent: omgilibot
-User-agent: opencode
-User-agent: Operator
-User-agent: PanguBot
-User-agent: Panscient
-User-agent: panscient.com
-User-agent: PerplexityBot
-User-agent: PhindBot
-User-agent: Poggio-Citations
-User-agent: Poseidon Research Crawler
-User-agent: QualifiedBot
+User-agent: Querit
 User-agent: Querit-SearchBot
-User-agent: QueritBot
-User-agent: QuillBot
-User-agent: quillbot.com
-User-agent: Reflectionbot
-User-agent: SBIntuitionsBot
-User-agent: Scrapy
-User-agent: SemrushBot-OCOB
-User-agent: SemrushBot-SWA
-User-agent: Shap-User
 User-agent: ShapBot
-User-agent: Sidetrade indexer bot
-User-agent: Spider
 User-agent: TavilyBot
 User-agent: Terra Cotta
 User-agent: TerraCotta
-User-agent: Thinkbot
-User-agent: TikTokSpider
-User-agent: Timpibot
-User-agent: TongyiBot
-User-agent: Trae
-User-agent: TwinAgent
-User-agent: UseAI
-User-agent: VelenPublicWebCrawler
-User-agent: WARDBot
-User-agent: Webzio-Extended
-User-agent: webzio-extended
-User-agent: wpbot
-User-agent: WRTNBot
-User-agent: YaK
-User-agent: YiyanBot
 User-agent: YouBot
-User-agent: ZanistaBot
 Disallow: /
 
-# Additional blocks not on https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt
+# AI Data Scrapers
+User-agent: AI2Bot
+User-agent: AI2Bot-Dolma
+User-agent: AmazonBot
+User-agent: bedrockbot
+User-agent: Bytespider
+User-agent: ChatGLM-Spider
+User-agent: ClaudeBot
+User-agent: cohere-training-data-crawler
+User-agent: CohereBot
+User-agent: Cotoyogi
+User-agent: Datenbank Crawler
+User-agent: DeepSeekBot
+User-agent: Doubaobot
+User-agent: ERNIEBot
+User-agent: FacebookBot
+User-agent: ICC-Crawler
+User-agent: imageSpider
+User-agent: Kangaroo Bot
+User-agent: KimiBot
+User-agent: KimiCrawler
+User-agent: laion-huggingface-processor
+User-agent: meta-externalagent
+User-agent: micro-crawl
+User-agent: MistralBot
+User-agent: MoonshotBot
+User-agent: MoonSpider
+User-agent: omgili
+User-agent: PanguBot
+User-agent: ReflectionBot
+User-agent: SalamandraVLM
+User-agent: SBIntuitionsBot
+User-agent: Spider
+User-agent: TimpiBot
+User-agent: VelenPublicWebCrawler
+User-agent: webzio-extended
+Disallow: /
 
+# AI Search
+User-agent: AIWebIndex
+User-agent: AIWebIndex-Agents
+Disallow: /
+
+# Automated Agents
+User-agent: Amazon Bedrock AgentCore Browser
+Disallow: /
+
+# Fetchers
+User-agent: TikTokSpider
+Disallow: /
+
+# Intelligence Gatherers
 User-agent: Amazing-SearchBot
-User-agent: Barkrowler
-User-agent: BriskBot
-User-agent: blockchain-development-company.xyz
-User-agent: DataForSeoBot
-User-agent: HaloBot
-User-agent: NavCrawl
-User-agent: rssamplifier.com reader
-User-agent: SomethinggBot
-User-agent: supjav
+User-agent: AmazingTest-SearchBot
+User-agent: Awario
+User-agent: AwarioBot
+User-agent: AwarioSmartBot
+User-agent: YaK
+Disallow: /
+
+# Scrapers
+User-agent: Nutch
+User-agent: Scrapy
+User-agent: Thinkbot
 User-agent: ZoominfoBot
 Disallow: /
 
-# Additional Crawl Delays
+# SEO
+User-agent: Barkrowler
+User-agent: DataForSEO
+User-agent: DataForSEO Bot
+User-agent: DataForSEOBot
+Disallow: /
+
+# Misc
+User-agent: BriskBot
+User-agent: HaloBot
+User-agent: NavCrawl
+User-agent: rssamplifier
+User-agent: Somethinggbot
+User-agent: supjav
+User-agent: ZeroBot
+Disallow: /
+
+## Extra
+User-agent: Applebot-Extended
+User-agent: Google-Extended
+
+## Crawl Delay 189
 
 User-agent: Buck
 User-agent: DotBot
@@ -166,3 +133,10 @@ User-agent: rogerbot
 User-agent: siteexplorer
 User-agent: SERankingBacklinksBot
 Crawl-delay: 180
+
+## Crawl Delay 30
+
+User-agent: Ahrefs
+User-agent: SemrushBot
+User-agent: SemrushBot-BA
+Crawl-delay: 30
