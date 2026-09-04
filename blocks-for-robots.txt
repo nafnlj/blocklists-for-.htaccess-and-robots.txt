@@ -115,7 +115,6 @@ Disallow: /
 User-agent: BriskBot
 User-agent: HaloBot
 User-agent: NavCrawl
-User-agent: rssamplifier
 User-agent: RSSAmplifierBot
 User-agent: Somethinggbot
 User-agent: supjav
