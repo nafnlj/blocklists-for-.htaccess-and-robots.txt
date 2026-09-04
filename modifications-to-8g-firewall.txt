@@ -1,27 +1,26 @@
 # Modifications to User Agent section of Jeff Starr's 8G FIREWALL
 # 8G FIREWALL
 # https://perishablepress.com/8g-firewall/
-# Only useful if you are using original ai-robots-txt repo or my addenda + Jeff Starr's 8G Firewall
-# Modifications would be made to 8G
-# Some of the removals are for UAs covered by ai robots or my addenda (see square bracket notes)
-# Other removals are for UAs I don't want to block
+# Only useful if you are using my blocklists and 8G Firewall
+# Worth reviewing if you are using https://github.com/ai-robots-txt/ai.robots.txt and 8G Firewall, although not on all fours
 # See Jeff Starr's 8G Firewall documentation for information about the firewall and how to implement it
 # Removals Compared to 09-27-2025 Release
-# Line 140: ahrefs [I don't want to block]
-# Line 140: archiver [I don't want to block]
-# Line 144: awario [covered by ai robots]
-# Line 144: babbar [superseded by barkrowler, I don't see it anymore]
-# Line 144: barkrowler [covered by ai robots]
-# Line 144: bytespider [covered by ai robots]
-# Line 145: claudebot [covered by ai robots]
-# Line 145: commoncrawl [covered by ai robots]
-# Line 145: dataforseo [covered by my addendum to ai robots]
-# Line 145: mj12bot [covered in my robots.txt]
-# Line 148: imagesiftbot [covered by ai robots]
-# Line 151: rogerbot [covered in my robots.txt]
-# Line 151: scrapy [covered by ai robots]
-# Line 154: wellknownbot [I don't want to block]
-# Line 157: zoominfobot [covered by ai robots]
+ahrefs [covered with crawl delay]
+archiver [I don't want to block]
+awario [covered]
+babbar [superseded by barkrowler, I don't see it anymore]
+barkrowler [covered]
+bytespider [covered]
+claudebot [covered]
+commoncrawl [covered]
+dataforseo [covered]
+mj12bot [covered]
+imagesiftbot [covered]
+nutch [covered]
+rogerbot [covered]
+scrapy [covered]
+wellknownbot [I don't want to block]
+zoominfobot [covered]
 
 # 8G:[USER AGENT]
 <IfModule mod_rewrite.c>
