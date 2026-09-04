@@ -1,0 +1,36 @@
+# Current .htaccess bot blocklist
+# Inspired by https://github.com/ai-robots-txt/ai.robots.txt, from which I borrowed the structure
+# This list is based on the ai-robots-txt repo, my own logs analysis, and https://knownagents.com/agents
+# Categories derive from https://knownagents.com/agents
+# My policy is to try to block AI training and wasteful/malicious bots and scrapers but allow search
+
+RewriteEngine On
+# Agents
+RewriteCond %{HTTP_USER_AGENT} (\b(Manus-User|TwinAgent)\b) [NC,OR]
+# Assistants
+RewriteCond %{HTTP_USER_AGENT} (\b(AI2Bot-DeepResearchEval|bigsur\.ai|GeistHaus-PageFetcher|PhindBot)\b) [NC,OR]
+# Data Providers
+RewriteCond %{HTTP_USER_AGENT} (\b(ApifyBot|ApifyWebsiteContentCrawler|Brightbot|CragCrawler|Crawlspace|Diffbot|ExaBot|FirecrawlAgent)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(HenkBot|Querit-SearchBot|Querit|ShapBot|TavilyBot|Terra\ Cotta|TerraCotta|YouBot)\b) [NC,OR]
+# AI Data Scrapers
+RewriteCond %{HTTP_USER_AGENT} (\b(AI2Bot|AI2Bot-Dolma|AmazonBot|bedrockbot|Bytespider|ChatGLM-Spider|ClaudeBot|cohere-training-data-crawler)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(CohereBot|Cotoyogi|Datenbank\ Crawler|DeepSeekBot|Doubaobot|ERNIEBot|FacebookBot|ICC-Crawler)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(imageSpider|Kangaroo\ Bot|KimiBot|KimiCrawler|laion-huggingface-processor|meta-externalagent|micro-crawl|MistralBot)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(MoonshotBot|MoonSpider|omgili|PanguBot|ReflectionBot|SalamandraVLM|SBIntuitionsBot|Spider)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(TimpiBot|VelenPublicWebCrawler|webzio-extended)\b) [NC,OR]
+# AI Search
+RewriteCond %{HTTP_USER_AGENT} (\b(AIWebIndex|AIWebIndex-Agents)\b) [NC,OR]
+# Automated Agents
+RewriteCond %{HTTP_USER_AGENT} (\b(Amazon\ Bedrock\ AgentCore\ Browser)\b) [NC,OR]
+# Fetchers
+RewriteCond %{HTTP_USER_AGENT} (\b(TikTokSpider)\b) [NC,OR]
+# Intelligence Gatherers
+RewriteCond %{HTTP_USER_AGENT} (\b(Amazing-SearchBot|AmazingTest-SearchBot|Awario|AwarioBot|AwarioSmartBot|YaK)\b) [NC,OR]
+# Scrapers
+RewriteCond %{HTTP_USER_AGENT} (\b(Nutch|Scrapy|Thinkbot|ZoominfoBot)\b) [NC,OR]
+# SEO
+RewriteCond %{HTTP_USER_AGENT} (\b(Barkrowler|DataForSEO|DataForSEO\ Bot|DataForSEOBot)\b) [NC,OR]
+# Misc
+RewriteCond %{HTTP_USER_AGENT} (\b(BriskBot|HaloBot|NavCrawl|rssamplifier|Somethinggbot|supjav|ZeroBot)\b) [NC]
+RewriteRule !^/?robots\.txt$ - [F]
+
