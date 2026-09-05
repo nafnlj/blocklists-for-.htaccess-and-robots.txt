@@ -127,6 +127,7 @@ Disallow: /
 ## Extra
 User-agent: Applebot-Extended
 User-agent: Google-Extended
+Disallow: /
 
 ## Crawl Delay 180
 
