@@ -112,6 +112,7 @@ User-agent: DataForSEOBot
 Disallow: /
 
 # Misc
+User-agent: AionBot
 User-agent: BriskBot
 User-agent: HaloBot
 User-agent: MathPicDatasetCrawler
