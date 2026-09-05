@@ -114,6 +114,7 @@ Disallow: /
 # Misc
 User-agent: BriskBot
 User-agent: HaloBot
+User-agent: MathPicDatasetCrawler
 User-agent: NavCrawl
 User-agent: RSSAmplifierBot
 User-agent: Somethinggbot
