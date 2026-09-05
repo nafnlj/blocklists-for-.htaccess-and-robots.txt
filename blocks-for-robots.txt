@@ -142,7 +142,6 @@ Crawl-delay: 180
 ## Crawl Delay 30
 
 User-agent: Ahrefs
-User-agent: Amzn-SearchBot
 User-agent: SemrushBot
 User-agent: SemrushBot-BA
 Crawl-delay: 30
