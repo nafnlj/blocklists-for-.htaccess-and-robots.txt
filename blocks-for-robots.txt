@@ -127,8 +127,9 @@ Disallow: /
 User-agent: Applebot-Extended
 User-agent: Google-Extended
 
-## Crawl Delay 189
+## Crawl Delay 180
 
+User-agent: AionBot
 User-agent: Buck
 User-agent: DotBot
 User-agent: MJ12bot
