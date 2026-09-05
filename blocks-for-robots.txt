@@ -114,6 +114,7 @@ Disallow: /
 # Misc
 User-agent: AionBot
 User-agent: BriskBot
+User-agent: CodeMMPretrainCrawler
 User-agent: HaloBot
 User-agent: MathPicDatasetCrawler
 User-agent: NavCrawl
