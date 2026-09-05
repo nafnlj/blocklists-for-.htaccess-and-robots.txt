@@ -17,8 +17,10 @@ dataforseo [covered]
 mj12bot [covered]
 imagesiftbot [covered]
 nutch [covered]
+petalbot (I don't want to block)
 rogerbot [covered]
 scrapy [covered]
+seznambot (I don't want to block)
 wellknownbot [I don't want to block]
 zoominfobot [covered]
 
@@ -35,8 +37,8 @@ zoominfobot [covered]
 	RewriteCond %{HTTP_USER_AGENT} (dotbot|dotnetdotcom|dumbot|econtext|emailcollector|emailsiphon|emailwolf|eolasbot|eventures|extract|eyenetie|feedfinder|flaming|flashget|flicky|foobot|fuck) [NC,OR]
 	RewriteCond %{HTTP_USER_AGENT} (g00g1e|getright|gigabot|go-ahead-got|go-http-client|gozilla|grabnet|grafula|harvest|heritrix|hrankbot|httracks?|icarus6j|intelx|jetbot|jetcar|jikespider|kmccrew|leechftp|libweb|liebaofast) [NC,OR]
 	RewriteCond %{HTTP_USER_AGENT} (linkscan|linkwalker|lwp-download|majestic|masscan|mauibot|miner|mechanize|morfeus|moveoverbot|mozlila|netmechanic|netspider|nicerspro|nikto|ninja|nominet|nutch) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (octopus|pagegrabber|petalbot|planetwork|postrank|proximic|purebot|queryn|queryseeker|radian6|radiation|realdownload|remoteview|scan|scooter|seekerspid) [NC,OR]
-	RewriteCond %{HTTP_USER_AGENT} (semalt|seokicks|seznambot|siclab|sindice|sistrix|sitebot|siteexplorer|sitesnagger|skygrid|smartdownload|snoopy|sosospider|spankbot|spbot|sqlmap|stackrambler|stripper|sucker|surftbot) [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (octopus|pagegrabber|planetwork|postrank|proximic|purebot|queryn|queryseeker|radian6|radiation|realdownload|remoteview|scan|scooter|seekerspid) [NC,OR]
+	RewriteCond %{HTTP_USER_AGENT} (semalt|seokicks|siclab|sindice|sistrix|sitebot|siteexplorer|sitesnagger|skygrid|smartdownload|snoopy|sosospider|spankbot|spbot|sqlmap|stackrambler|stripper|sucker|surftbot) [NC,OR]
 	RewriteCond %{HTTP_USER_AGENT} (sux0r|suzukacz|suzuran|takeout|teleport|telesoft|true_robots|turingos|turnit|tweetmemebot|vampire|vikspider|voideye|webleacher|webreaper|webstripper|webvac|webviewer|webwhacker) [NC,OR]
 	RewriteCond %{HTTP_USER_AGENT} (winhttp|wwwoffle|woxbot|xaldon|xxxyy|yamanalab|yioopbot|yisouspider|youda|zeus|zmeu|zune|zyborg) [NC]
 
