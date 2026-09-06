@@ -118,6 +118,7 @@ User-agent: CodeMMPretrainCrawler
 User-agent: HaloBot
 User-agent: MathPicDatasetCrawler
 User-agent: NavCrawl
+User-agent: QlyzeBot
 User-agent: RSSAmplifierBot
 User-agent: Somethinggbot
 User-agent: supjav
