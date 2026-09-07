@@ -5,24 +5,24 @@
 # Worth reviewing if you are using https://github.com/ai-robots-txt/ai.robots.txt and 8G Firewall, although not on all fours
 # See Jeff Starr's 8G Firewall documentation for information about the firewall and how to implement it
 # Removals Compared to 09-27-2025 Release
-ahrefs [covered with crawl delay]
-archiver [I don't want to block]
-awario [covered]
-babbar [superseded by barkrowler, I don't see it anymore]
-barkrowler [covered]
-bytespider [covered]
-claudebot [covered]
-commoncrawl [covered]
-dataforseo [covered]
-mj12bot [covered]
-imagesiftbot [covered]
-nutch [covered]
-petalbot (I don't want to block)
-rogerbot [covered]
-scrapy [covered]
-seznambot (I don't want to block)
-wellknownbot [I don't want to block]
-zoominfobot [covered]
+# ahrefs [covered with crawl delay]
+# archiver [I don't want to block]
+# awario [covered]
+# babbar [superseded by barkrowler, I don't see it anymore]
+# barkrowler [covered]
+# bytespider [covered]
+# claudebot [covered]
+# commoncrawl [covered]
+# dataforseo [covered]
+# mj12bot [covered]
+# imagesiftbot [covered]
+# nutch [covered]
+# petalbot (I don't want to block)
+# rogerbot [covered]
+# scrapy [covered]
+# seznambot (I don't want to block)
+# wellknownbot [I don't want to block]
+# zoominfobot [covered]
 
 # 8G:[USER AGENT]
 <IfModule mod_rewrite.c>
