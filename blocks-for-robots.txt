@@ -137,7 +137,6 @@ User-agent: DotBot
 User-agent: MJ12bot
 User-agent: rogerbot
 User-agent: siteexplorer
-User-agent: SERankingBacklinksBot
 Crawl-delay: 180
 
 ## Crawl Delay 30
