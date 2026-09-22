@@ -145,4 +145,5 @@ Crawl-delay: 180
 User-agent: Ahrefs
 User-agent: SemrushBot
 User-agent: SemrushBot-BA
+User-agent: SERankingBacklinksBot
 Crawl-delay: 30
