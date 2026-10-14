@@ -1,0 +1,3 @@
+See my article for an explanation of why I blocked RSSAmplifierBot and BriskBot and why I would recommend that most webmasters follow suit (but far be it from me to tell anyone what to do): [RSS Amplifier Re-Publishes 19 Full NLJ Articles Without Permission](https://thenewleafjournal.com/rss-amplifier-re-publishes-19-full-nlj-articles-without-permission/).
+
+Note that RSSAmplifierBot does not obey robots.txt from my experience, so only discouraging crawling via robots would not be sufficient.
