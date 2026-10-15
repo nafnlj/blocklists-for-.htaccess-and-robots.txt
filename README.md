@@ -2,12 +2,14 @@
 
 This repository contains .htaccess and robots.txt rules I use on The New Leaf Journal (https://thenewleafjournal.com/) and The Emu Café Social (https://social.emucafe.org/).
 
-My lists are inspired by the excellent ai.robots.txt project on GitHub (https://github.com/ai-robots-txt/ai.robots.txt). In addition to ai-robots.txt, my lists are informed by my studying my server logs and reviewing the agents and bots on https://knownagents.com/agents.
+I had previously used a slightly modified version of the very good ai.robots.txt lists (https://github.com/ai-robots-txt/ai.robots.txt). However, because my own blocking goals are a bit different than ai.robots.txt, I decided to start maintaining my own lists based on their .htaccess/robots.txt style.
 
-My lists are smaller and I have adopted a policy of trying to prevent AI training while allowing AI "search" (such as it is). I have also added a few AI and non-AI crawlers that I identified as unwanted and do not (yet?) appear on the ai.robots.txt lists. The ai.robots.txt .htaccess rules are designed to work with robots.txt in that they allow blocked crawlers to access robots.txt. This is good since it prevents well-behaved crawlers that follow robots.txt from spamming the site with 404s (I noted Amazon's bots as one example here). Thus, I also include robots.txt rules consistent with my .htaccess directives. My robots.txt rules also include an additional crawl-delay list for bots not in the original or my modified blocklists.
+My initial lists were based on ai.robots.txt, my observations of New Leaf Journal's server logs, and researching agents and bots on https://knownagents.com/agents.
 
-Finally, I included my modifications to the USER AGENT section of Jeff Starr's indispensible 8G Firewall (https://perishablepress.com/8g-firewall/). I removed user agents that are handled by my modified version of the ai.robots.txt rules and I removed a few UAs that I either address through my own robots.txt directives or that I do not want to block as a general matter.
+In general, I try to block AI training bots/scrapers while allowing traditional search indexing and AI "search" (such as it is). My lists also include other bots and crawlers that I consider suspect or unwanted for one reason or another.
 
-I am only including .htaccess because that is what I use for my two WordPress sites. However, both ai.robots.txt and Jeff Starr's 8G Firewall are available for various server configurations, so my edits can be adapted to whatever you may be using.
+I have also included my modifications to the USER AGENT section of Jeff Starr's indispensible 8G Firewall (https://perishablepress.com/8g-firewall/). I removed user agents that are handled by my modified version of the ai.robots.txt rules and I removed a few UAs that I either address through my own robots.txt directives or that I do not want to block as a general matter.
 
-At the moment, I have not published detailed explanations of my edits, but I may do so in the future. Feel free to create an issue if you have questions or suggestions. The Codeberg version of this repository (https://codeberg.org/nafnlj/blocklists-for-.htaccess-and-robots.txt) is canonical.
+My lists are free to use as is or with modifications. For whatever it is worth, I think my lists may be a good starting point for any webmaster whose blocking goals are in line with my own, but I would encourage anyone to go through my list carefully and make any necessary modifications before putting to use in a production site.
+
+Readers may also be interested in my "Notes" folder, which consist of small markdown files with thoughts on various bots/scrapers, some of which are not on my block lists.
