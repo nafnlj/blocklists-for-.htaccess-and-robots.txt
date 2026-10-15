@@ -5,24 +5,24 @@
 # Worth reviewing if you are using https://github.com/ai-robots-txt/ai.robots.txt and 8G Firewall, although not on all fours
 # See Jeff Starr's 8G Firewall documentation for information about the firewall and how to implement it
 # Removals Compared to 09-27-2025 Release
-# ahrefs [covered with crawl delay]
-# archiver [I don't want to block]
-# awario [covered]
-# babbar [superseded by barkrowler, I don't see it anymore]
-# barkrowler [covered]
-# bytespider [covered]
-# claudebot [covered]
-# commoncrawl [covered]
-# dataforseo [covered]
-# mj12bot [covered]
-# imagesiftbot [covered]
-# nutch [covered]
-# petalbot (I don't want to block)
-# rogerbot [covered]
-# scrapy [covered]
-# seznambot (I don't want to block)
-# wellknownbot [I don't want to block]
-# zoominfobot [covered]
+# ahrefs [I cover it with a crawl delay. Ahrefs can be busy, but it follows robots.txt and is also being used for an independent search engine called Yep.]
+# archiver [Deleted because I don't want to block.]
+# awario [Covered in my block lists.]
+# babbar [Babbar has been superseded by Barkrowler (see below) and I have not seen it a long time.]
+# barkrowler [Covered in my block lists.]
+# bytespider [Covered in my block lists.]
+# claudebot [Covered in my block lists.]
+# commoncrawl [Covered in my block lists. I will note Common Crawl is used for some non-AI search applications, so I would encourage people to review before deciding whether to block.]
+# dataforseo [Covered in my block lists. I had given it a chance but its crawling was out of control.]
+# mj12bot [Covered in my robots.txt with crawl delay directive.]
+# imagesiftbot [Covered in my block lists.]
+# nutch [Covered in my block lists.]
+# petalbot [I decided to allow it after researching the matter.]
+# rogerbot [Covered in my robots.txt with crawl delay directive, but I do not recall seeing rogerbot in my logs.]
+# scrapy [Covered in my block lists -- a Scrapy crashed my site once!]
+# seznambot [Allowed -- good independent search engine. I strongly recommend not blocking Seznam.]
+# wellknownbot [Allowed -- simply searches for /.well-known/ files. I recommend allowing it.]
+# zoominfobot [Covered in my block lists.]
 
 # 8G:[USER AGENT]
 <IfModule mod_rewrite.c>
