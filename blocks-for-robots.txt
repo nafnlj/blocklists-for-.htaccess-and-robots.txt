@@ -116,6 +116,7 @@ User-agent: AionBot
 User-agent: BriskBot
 User-agent: CodeMMPretrainCrawler
 User-agent: HaloBot
+User-agent: Jetfuel-Public-Dataset-Acquisition
 User-agent: MathPicDatasetCrawler
 User-agent: NavCrawl
 User-agent: QlyzeBot
@@ -130,19 +131,15 @@ User-agent: Applebot-Extended
 User-agent: Google-Extended
 Disallow: /
 
-## Crawl Delay 180
+## Crawl Delay 30
 
+User-agent: Ahrefs
 User-agent: Buck
 User-agent: DotBot
 User-agent: MJ12bot
 User-agent: rogerbot
-User-agent: siteexplorer
-Crawl-delay: 180
-
-## Crawl Delay 30
-
-User-agent: Ahrefs
 User-agent: SemrushBot
 User-agent: SemrushBot-BA
 User-agent: SERankingBacklinksBot
+User-agent: siteexplorer
 Crawl-delay: 30
