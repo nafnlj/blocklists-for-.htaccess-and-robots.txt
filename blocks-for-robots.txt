@@ -115,6 +115,7 @@ Disallow: /
 User-agent: AionBot
 User-agent: BriskBot
 User-agent: CodeMMPretrainCrawler
+User-agent: ElevenlabsCrawler
 User-agent: HaloBot
 User-agent: Jetfuel-Public-Dataset-Acquisition
 User-agent: MathPicDatasetCrawler
