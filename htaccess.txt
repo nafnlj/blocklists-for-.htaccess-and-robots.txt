@@ -11,13 +11,13 @@ RewriteCond %{HTTP_USER_AGENT} (\b(Manus-User|TwinAgent)\b) [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} (\b(AI2Bot-DeepResearchEval|bigsur\.ai|GeistHaus-PageFetcher|PhindBot)\b) [NC,OR]
 # Data Providers
 RewriteCond %{HTTP_USER_AGENT} (\b(ApifyBot|ApifyWebsiteContentCrawler|Brightbot|CragCrawler|Crawlspace|Diffbot|ExaBot|FirecrawlAgent)\b) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} (\b(HenkBot|Querit-SearchBot|Querit|ShapBot|TavilyBot|Terra\ Cotta|TerraCotta|YouBot)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(HenkBot|Querit-SearchBot|Querit|RSSAmplifierBot|ShapBot|TavilyBot|Terra\ Cotta|TerraCotta|YouBot)\b) [NC,OR]
 # AI Data Scrapers
-RewriteCond %{HTTP_USER_AGENT} (\b(AI2Bot|AI2Bot-Dolma|AmazonBot|bedrockbot|Bytespider|ChatGLM-Spider|ClaudeBot|cohere-training-data-crawler)\b) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} (\b(CohereBot|Cotoyogi|Datenbank\ Crawler|DeepSeekBot|Doubaobot|ERNIEBot|FacebookBot|ICC-Crawler)\b) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} (\b(imageSpider|Kangaroo\ Bot|KimiBot|KimiCrawler|laion-huggingface-processor|meta-externalagent|micro-crawl|MistralBot)\b) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} (\b(MoonshotBot|MoonSpider|omgili|PanguBot|ReflectionBot|SalamandraVLM|SBIntuitionsBot|Spider)\b) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} (\b(TimpiBot|VelenPublicWebCrawler|webzio-extended)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(AI2Bot|AI2Bot-Dolma|AmazonBot|bedrockbot|Bytespider|ChatGLM-Spider|ClaudeBot|CodeMMPretrainCrawler|cohere-training-data-crawler)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(CohereBot|Cotoyogi|Datenbank\ Crawler|DeepSeekBot|Doubaobot|ElevenlabsCrawler|ERNIEBot|FacebookBot|ICC-Crawler)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(imageSpider|Jetfuel-Public-Dataset-Acquisition|Kangaroo\ Bot|KimiBot|KimiCrawler|laion-huggingface-processor|meta-externalagent|MathPicDatasetCrawler|micro-crawl)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(MistralBot|MoonshotBot|MoonSpider|omgili|PanguBot|ReflectionBot|SalamandraVLM|SBIntuitionsBot)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(Spider|TimpiBot|VelenPublicWebCrawler|webzio-extended)\b) [NC,OR]
 # AI Search
 RewriteCond %{HTTP_USER_AGENT} (\b(AIWebIndex|AIWebIndex-Agents)\b) [NC,OR]
 # Automated Agents
@@ -27,10 +27,9 @@ RewriteCond %{HTTP_USER_AGENT} (\b(TikTokSpider)\b) [NC,OR]
 # Intelligence Gatherers
 RewriteCond %{HTTP_USER_AGENT} (\b(Amazing-SearchBot|AmazingTest-SearchBot|Awario|AwarioBot|AwarioSmartBot|YaK)\b) [NC,OR]
 # Scrapers
-RewriteCond %{HTTP_USER_AGENT} (\b(Nutch|Scrapy|Thinkbot|ZoominfoBot)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(Nutch|Scrapy|Thinkbot|ZeroBot|ZoominfoBot)\b) [NC,OR]
 # SEO
 RewriteCond %{HTTP_USER_AGENT} (\b(Barkrowler|DataForSEO|DataForSEO\ Bot|DataForSEOBot)\b) [NC,OR]
 # Misc
-RewriteCond %{HTTP_USER_AGENT} (\b(AionBot|BriskBot|CodeMMPretrainCrawler|ElevenlabsCrawler|HaloBot|Jetfuel-Public-Dataset-Acquisition|MathPicDatasetCrawler|NavCrawl|QlyzeBot|RSSAmplifierBot)\b) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} (\b(Somethinggbot|supjav|ZeroBot)\b) [NC]
+RewriteCond %{HTTP_USER_AGENT} (\b(AionBot|BriskBot|HaloBot|NavCrawl|QlyzeBot|Somethinggbot|supjav)\b) [NC]
 RewriteRule !^/?robots\.txt$ - [F]
