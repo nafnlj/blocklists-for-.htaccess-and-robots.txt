@@ -30,6 +30,7 @@ User-agent: FirecrawlAgent
 User-agent: HenkBot
 User-agent: Querit
 User-agent: Querit-SearchBot
+User-agent: RSSAmplifierBot
 User-agent: ShapBot
 User-agent: TavilyBot
 User-agent: Terra Cotta
@@ -45,20 +46,24 @@ User-agent: bedrockbot
 User-agent: Bytespider
 User-agent: ChatGLM-Spider
 User-agent: ClaudeBot
+User-agent: CodeMMPretrainCrawler
 User-agent: cohere-training-data-crawler
 User-agent: CohereBot
 User-agent: Cotoyogi
 User-agent: Datenbank Crawler
 User-agent: DeepSeekBot
 User-agent: Doubaobot
+User-agent: ElevenlabsCrawler
 User-agent: ERNIEBot
 User-agent: FacebookBot
 User-agent: ICC-Crawler
 User-agent: imageSpider
+User-agent: Jetfuel-Public-Dataset-Acquisition
 User-agent: Kangaroo Bot
 User-agent: KimiBot
 User-agent: KimiCrawler
 User-agent: laion-huggingface-processor
+User-agent: MathPicDatasetCrawler
 User-agent: meta-externalagent
 User-agent: micro-crawl
 User-agent: MistralBot
@@ -101,6 +106,7 @@ Disallow: /
 User-agent: Nutch
 User-agent: Scrapy
 User-agent: Thinkbot
+User-agent: ZeroBot
 User-agent: ZoominfoBot
 Disallow: /
 
@@ -114,17 +120,11 @@ Disallow: /
 # Misc
 User-agent: AionBot
 User-agent: BriskBot
-User-agent: CodeMMPretrainCrawler
-User-agent: ElevenlabsCrawler
 User-agent: HaloBot
-User-agent: Jetfuel-Public-Dataset-Acquisition
-User-agent: MathPicDatasetCrawler
 User-agent: NavCrawl
 User-agent: QlyzeBot
-User-agent: RSSAmplifierBot
 User-agent: Somethinggbot
 User-agent: supjav
-User-agent: ZeroBot
 Disallow: /
 
 ## Extra
