@@ -31,5 +31,5 @@ RewriteCond %{HTTP_USER_AGENT} (\b(Nutch|Scrapy|Thinkbot|ZeroBot|ZoominfoBot)\b)
 # SEO
 RewriteCond %{HTTP_USER_AGENT} (\b(Barkrowler|DataForSEO|DataForSEO\ Bot|DataForSEOBot)\b) [NC,OR]
 # Misc
-RewriteCond %{HTTP_USER_AGENT} (\b(AionBot|BriskBot|HaloBot|NavCrawl|QlyzeBot|Somethinggbot|supjav)\b) [NC]
+RewriteCond %{HTTP_USER_AGENT} (\b(AionBot|BriskBot|HaloBot|NavCrawl|QlyzeBot|RSSingBotSomethinggbot|supjav)\b) [NC]
 RewriteRule !^/?robots\.txt$ - [F]
