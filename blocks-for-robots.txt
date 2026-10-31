@@ -123,6 +123,7 @@ User-agent: BriskBot
 User-agent: HaloBot
 User-agent: NavCrawl
 User-agent: QlyzeBot
+User-agent: RSSingBot
 User-agent: Somethinggbot
 User-agent: supjav
 Disallow: /
