@@ -10,8 +10,8 @@ RewriteCond %{HTTP_USER_AGENT} (\b(Manus-User|TwinAgent)\b) [NC,OR]
 # Assistants
 RewriteCond %{HTTP_USER_AGENT} (\b(AI2Bot-DeepResearchEval|bigsur\.ai|GeistHaus-PageFetcher|PhindBot)\b) [NC,OR]
 # Data Providers
-RewriteCond %{HTTP_USER_AGENT} (\b(ApifyBot|ApifyWebsiteContentCrawler|Brightbot|CragCrawler|Crawlspace|Diffbot|ExaBot|FirecrawlAgent)\b) [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} (\b(HenkBot|Querit-SearchBot|Querit|RSSAmplifierBot|ShapBot|TavilyBot|Terra\ Cotta|TerraCotta|YouBot)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(ApifyBot|ApifyWebsiteContentCrawler|Brightbot|CragCrawler|Crawlspace|Diffbot|ExaBot|FirecrawlAgent|HenkBot)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(Querit-SearchBot|Querit|RSSAmplifierBot|ShapBot|TavilyBot|Terra\ Cotta|TerraCotta|YouBot)\b) [NC,OR]
 # AI Data Scrapers
 RewriteCond %{HTTP_USER_AGENT} (\b(AI2Bot|AI2Bot-Dolma|AmazonBot|bedrockbot|Bytespider|ChatGLM-Spider|ClaudeBot|CodeMMPretrainCrawler|cohere-training-data-crawler)\b) [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} (\b(CohereBot|Cotoyogi|Datenbank\ Crawler|DeepSeekBot|Doubaobot|ElevenlabsCrawler|ERNIEBot|FacebookBot|ICC-Crawler)\b) [NC,OR]
@@ -31,5 +31,6 @@ RewriteCond %{HTTP_USER_AGENT} (\b(Nutch|Scrapy|Thinkbot|ZeroBot|ZoominfoBot)\b)
 # SEO
 RewriteCond %{HTTP_USER_AGENT} (\b(Barkrowler|DataForSEO|DataForSEO\ Bot|DataForSEOBot)\b) [NC,OR]
 # Misc
-RewriteCond %{HTTP_USER_AGENT} (\b(AionBot|BriskBot|dwnupd|HaloBot|NavCrawl|QlyzeBot|RSSingBot|Somethinggbot|supjav)\b) [NC]
+RewriteCond %{HTTP_USER_AGENT} (\b(AionBot|BriskBot|dwnupd|example\.com|HaloBot|NavCrawl|QlyzeBot|RSSingBot|Somethinggbot|supjav)\b) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (\b(supjav)\b) [NC]
 RewriteRule !^/?robots\.txt$ - [F]
