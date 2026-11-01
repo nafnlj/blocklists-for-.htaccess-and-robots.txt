@@ -120,6 +120,7 @@ Disallow: /
 # Misc
 User-agent: AionBot
 User-agent: BriskBot
+User-agent: dwnupd
 User-agent: HaloBot
 User-agent: NavCrawl
 User-agent: QlyzeBot
