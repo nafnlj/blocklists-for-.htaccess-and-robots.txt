@@ -13,3 +13,5 @@ I have also included my modifications to the USER AGENT section of Jeff Starr's 
 My lists are free to use as is or with modifications. For whatever it is worth, I think my lists may be a good starting point for any webmaster whose blocking goals are in line with my own, but I would encourage anyone to go through my list carefully and make any necessary modifications before putting to use in a production site.
 
 Readers may also be interested in my "Notes" folder, which consist of small markdown files with thoughts on various bots/scrapers, some of which are not on my block lists.
+
+Mirrored to GitHub: https://github.com/nafnlj/blocklists-for-.htaccess-and-robots.txt
