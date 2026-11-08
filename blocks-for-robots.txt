@@ -53,6 +53,7 @@ User-agent: Cotoyogi
 User-agent: Datenbank Crawler
 User-agent: DeepSeekBot
 User-agent: Doubaobot
+User-agent: efficient-vlm-export
 User-agent: ElevenlabsCrawler
 User-agent: ERNIEBot
 User-agent: FacebookBot
