@@ -122,6 +122,7 @@ Disallow: /
 User-agent: AionBot
 User-agent: BriskBot
 User-agent: dwnupd
+User-agent: DXXSearch
 User-agent: HaloBot
 User-agent: Go-http-client
 User-agent: NavCrawl
